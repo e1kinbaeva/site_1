@@ -1,0 +1,465 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="SemiColonWeb">
+    <meta name="description"
+        content="Create Academic Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+    <link rel="stylesheet" href="https://use.typekit.net/mym7qil.css">
+
+    <link rel="stylesheet" href="static/style.css">
+
+    <link rel="stylesheet" href="static/css/font-icons.css">
+
+    <link rel="stylesheet" href="static/demos/academic/academic.css">
+
+    <link rel="stylesheet" href="static/css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Academic | Canvas</title>
+</head>
+
+<body class="stretched side-header dark">
+    <button type="button" class="btn btn-dark body-scheme-toggle" data-bodyclass-toggle="dark"
+        data-add-class="btn-warning" data-remove-class="btn-dark"
+        data-add-html="<i class='bi-brightness-high'></i><span class='visually-hidden'>Light Mode</span>"
+        data-remove-html="<i class='bi-moon-stars'></i><span class='visually-hidden'>Dark Mode</span>"><span
+            class="visually-hidden">Dark Toggle</span></button>
+
+    <div id="wrapper">
+        <header id="header">
+            <div id="header-wrap" class="border-0">
+                <div class="container">
+                    <div class="header-row justify-content-lg-between px-4 px-xl-0">
+
+                        <div class="order-1 order-lg-1 text-lg-center p-lg-4 py-3 mt-lg-5">
+                            <img src="{{about.image.url}}" alt="Canvas Logo"
+                                class="rounded-circle square square-lg mb-lg-3 d-none d-lg-inline-block">
+                            <div class>
+                                <h3 class="mb-0 fw-normal lh-1">{{about.fullname}}</h3>
+                                <p class="mb-0 op-06 fw-light">Ainazik Erkinbaeva</p>
+                            </div>
+                        </div>
+                        <div class="primary-menu-trigger order-3 order-lg-2 ms-auto ms-sm-3">
+                            <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                                <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                            </button>
+                        </div>
+                        <div class="header-misc order-2 order-lg-last ms-auto d-none d-sm-flex">
+                            <div class="d-flex justify-content-center w-100 py-4">
+                               
+                                <a href="{{settings.telegram}}"
+                                    class="social-icon si-small rounded-circle bg-contrast-200 mx-lg-1 h-bg-x-twitter"
+                                    style="--cnvs-socialicon-border: 0; --cnvs-socialicon-lineheight: 2rem">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="{{settings.instagram}}"
+                                    class="social-icon si-small rounded-circle bg-contrast-200 mx-lg-1 h-bg-instagram"
+                                    style="--cnvs-socialicon-border: 0; --cnvs-socialicon-lineheight: 2rem">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                        <nav class="primary-menu order-last order-lg-2">
+                            <ul class="menu-container one-page-menu" data-easing="easeInOutExpo" data-speed="1250"
+                                data-offset="0">
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-about">
+                                        <div><i class="bi-person-circle"></i> Обо мне</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-works">
+                                        <div><i class="bi-briefcase"></i> Работы</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-experience">
+                                        <div><i class="bi-person-gear"></i> Мои опыты работы</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-journal">
+                                        <div><i class="bi-journal-text"></i> Журнал</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-research">
+                                        <div><i class="bi-binoculars"></i> Иследования</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-blog">
+                                        <div><i class="bi-pencil"></i> Последние блоги</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-contact">
+                                        <div><i class="bi-envelope-open"></i> Контакты</div>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-clone"></div>
+        </header>
+
+        <section id="content">
+            <div class="content-wrap py-lg-0 pt-0 px-4">
+
+                <div id="section-about" class="page-section py-5 py-lg-6">
+                    <div class="container mw-md pt-lg-3">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-md-5">
+                                <p class="text-uppercase ls-2 fw-bold color">- BIO</p>
+                                <h2 class="display-2 fw-bolder text-uppercase ls-2">{{about.fullname}}</h2>
+                                <blockquote class="fs-6 border-color">
+                                    <p>{{about.phrase}}</p>
+                                    <footer class="blockquote-footer font-monospace mb-0"> {{about.fullname}}</footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="{{about.image.url}}" >
+                            </div>
+                        </div>
+                        <div class="clear my-5"></div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-md-10">
+                                <div class="row gy-5 justify-content-between">
+                                    <div class="col-md-5">
+                                        <h3 class="border-bottom border-color border-width-3 d-inline-block">Академические должности</h3>
+                                        <div
+
+                                            class="row feature-box-border-vertical col-mb-50 justify-content-center align-items-center">
+                                            
+                                            {%for position in positions%}
+                                            <div class="col-12 feature-box fbox-active fbox-dark fbox-sm">
+                                                <div class="fbox-icon">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <div class="fbox-content">
+                                                    <h3>{{position.title}}</h3>
+                                                    <p class="op-08 mt-0">{{position.full_info}}</p>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            {% endfor %}
+                                            
+                                            <div
+                                                
+                                                
+                                                        </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+
+                                        
+                                        <h3 class="border-bottom border-color border-width-3 d-inline-block">Образование и обучение</h3>
+                                      
+                                        {% for education in education%}
+                                        <div class="clear"></div>
+                                        <div class="feature-box fbox-plain fbox-sm">
+                                            <div class="fbox-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <div class="fbox-content">
+                                                <h3>{{education.title}}</h3>
+                                                <p class="mt-0">{{education.description}}</p>
+                                            </div>
+                                            </div>
+                                        {% endfor %}
+
+                                     
+                                            
+                                        
+                                    </div>
+                                    <div class="divider my-lg-6"></div>
+                                    <div class="col-md-3">
+
+                                        <h2><i class="bi-award"></i> <span
+                                                class="border-bottom border-color border-width-3 d-inline-block nocolor">
+                                                Награды</span></h2>
+                                            
+                                    {% for reward in rewards %}        
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="toggle mb-0" data-state="open">
+                                            <div class="toggle-header align-items-center">
+                                                <div class="toggle-title fs-4">{{reward.title}}</div>
+                                                <h3 class="mb-0 font-body me-3">{{reward.year}}</h3>
+                                                <div class="toggle-icon fs-4">
+                                                    <i class="toggle-open bi-dash color"></i>
+                                                </div>
+                                            </div>
+                                             {% endfor %}
+                                         
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div id="section-works" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5"><i class="bi-briefcase color"></i> Работы</h2>
+
+
+                        <div class="row gy-5">
+                            {% for work in works %}
+                            <div class="col-12">
+                                <div class="row g-4 gx-5 align-items-center">
+                                    <div class="col-md-6">
+                                        <img src="{{work.image.url}} " alt=".." class="rounded-2">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="mb-2">{{work.title}}</h3>
+                                        <p><span class="op-07">Опубликовано:</span> <span class="fw-bold color">{{work.published}}</span></p>
+                                        <p>{{work.description}}</p>
+                                       </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div id="section-experience" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5"><i class="bi-person-gear color"></i>
+                            Мои опыты работы</h2>
+                        <div class="row justify-content-center text-start">
+                            {% for experience in experience %}
+                            <div class="col-3">
+                            <p class="mb-2 small">{{experience.data}}</p>
+                            </div>
+                            <div class="col-9">
+                                <p>{{experience.desc}}</p>
+                            </div>
+                            {% endfor %}
+                          
+                        </div>
+                        <div class="divider my-lg-6"></div>
+                        <div class="row gx-4 gy-5 experience-features">
+                            {% for expert in expert %}
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="feature-box fbox-plain">
+                                    <div class="fbox-icon">
+                                        <a href="#"><i class="bi-percent"></i></a>
+                                    </div>
+                                    <div class="fbox-content">
+                                        <h3>{{expert.title}}</h3>
+                                        <p>{{expert.text}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div id="section-journal" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5"><i class="bi-journal-text color"></i>
+                            Журнал</h2>
+                        <div class="row gy-4">
+                            {% for journal in journal %}
+                            <div class="col-12">
+                                <div class="card bg-contrast-100 rounded-1 border-0">
+                                    <div class="card-body p-4">
+                                        <div class="toggle mb-0">
+                                            <div class="toggle-header d-block">
+                                                <div class="d-flex w-100">
+                                                    <div class="toggle-title fs-4 mb-2">
+                                                        {{journal.title}}
+                                                    </div>
+                                                </div>
+                                                <div class="small fw-normal mb-2 op-06">{{journal.text}}</div>
+                                                <div class="badge bg-warning fs-6 fw-normal mt-2 me-2">{{journal.type}}</div>
+                                                <div class="position-absolute bottom-0 end-0 d-flex align-items-center">
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div id="section-research" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5 mb-lg-6"><i
+                                class="bi-binoculars color"></i> Иследование</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="border-bottom border-color border-width-3 d-inline-block"> Резюме иследования
+                                </h3>
+                                <p class="lead mb-2">{{research.title}}</p>
+                                <p>{{research.description}}</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h3 class="border-bottom border-color border-width-3 d-inline-block">Интересы</h3>
+                                <div class="row g-2">
+                                    {% for interests in interests %}
+                                    <div class="col-auto">
+                                        <div class="small rounded-pill border px-4 py-2">{{interests.title}}</div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div id="section-blog" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5 mb-lg-6"><i class="bi-pencil color"></i>
+                            Последние блоги</h2>
+                        <div class="row g-5">
+                            {%for blogs in blogs %}
+                            <div class="col-md-6">
+                                <div class="posts-md">
+                                    <div class="entry">
+                                        <div class="entry-image">
+                                            <a href="#"><img class="rounded-6"
+                                                    src="{{blogs.image.url}}" alt="Image 3"></a>
+                                        </div>
+                                        <div class="entry-title mt-4">
+                                            <h3 class="mb-2 fs-5 fw-normal"><a href="#">{{blogs.title}}</a></h3>
+                                        </div>
+                                        <div class="entry-meta op-07">
+                                            <ul>
+                                                <li><a href="#">{{blogs.name}}</a></li>
+                                                <li><a href="#">{{blogs.created}}</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="entry-content">
+                                            <p class="mb-0">{{blogs.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div id="section-contact" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5 mb-lg-6"><i
+                                class="bi-envelope-open color"></i> Контакты</h2>
+                        <div class="row g-5">
+                            <div class="col-md-6">
+                                <div class="row gy-5">
+                                    <div class="col-12">
+                                        <h4 class="border-bottom border-color border-width-3 d-inline-block">Мой офис
+                                        </h4>
+                                        <address class="mb-4">{{settings.address}}</address>
+                                        <div class="d-flex mb-1"><strong class="col-3">Номер телефона:</strong>{{settings.phone}}
+                                        </div>
+                                        <div class="d-flex mb-1"><strong class="col-3">Номер ватсап:</strong> {{settings.whatsapp_phone}}
+                                        </div>
+                                        <div class="d-flex mb-1"><strong class="col-3">Email-почта:</strong> {{settings.email}}
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4 class="border-bottom border-color border-width-3 d-inline-block">Подписывайтесь на нас
+                                        </h4>
+                                        <ul class="list-group list-group-flush social-lists">
+                                            <a href="{{settings.instagram}}" class="list-group-item d-flex pt-0">Instagram<i
+                                                    class="bi-arrow-up-right ms-auto"></i></a>
+                                            <a href="{{settings.telegram}}" class="list-group-item d-flex">Telegram<i
+                                                    class="bi-arrow-up-right ms-auto"></i></a>
+                                        </ul>
+                                    </div>
+                                <!-- {% csrf_token %} -->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-widget">
+                                    <div class="form-result"></div>
+                                    <form class="mb-0" id="template-contactform" method="POST" name="template-contactform"
+                                        action="include/form.php" method="post">
+                                        <div class="form-process">
+                                            <div class="css3-spinner">
+                                                <div class="css3-spinner-scaler"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 form-group">
+                                                <label for="template-contactform-name">Ф.И.О <small>*</small></label>
+                                                <input type="text" id="template-contactform-name"
+                                                    name="name" value
+                                                    class="form-control bg-transparent required">
+                                            </div>
+                                            <div class="col-12 form-group">
+                                                <label for="template-contactform-email">Email-почта <small>*</small></label>
+                                                <input type="email" id="template-contactform-email"
+                                                    name="email" value
+                                                    class="required email form-control bg-transparent">
+                                            </div>
+                                            <div class="col-12 form-group">
+                                                <label for="phone">Номер телефона
+                                                    <small>*</small></label>
+                                                <input type="text" id="template-contactform-subject" name="subject"
+                                                    value class="required form-control bg-transparent">
+                                            </div>
+                                            <div class="col-12 form-group">
+                                                <label for="message">Сообщение
+                                                    <small>*</small></label>
+                                                <textarea class="required form-control bg-transparent"
+                                                    id="template-contactform-message"
+                                                    name="template-contactform-message" rows="6" cols="30"></textarea>
+                                            </div>
+                                            <div class="col-12 form-group d-none">
+                                                <input type="text" id="template-contactform-botcheck"
+                                                    name="template-contactform-botcheck" value
+                                                    class="form-control bg-transparent">
+                                            </div>
+                                            <div class="col-12 form-group">
+                                                <button class="button bg-color text-black rounded font-primary m-0"
+                                                    type="submit" id="template-contactform-submit"
+                                                    name="template-contactform-submit" value="submit">Отправить сообщение</button>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="prefix" value="template-contactform-">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer" class="bg-contrast-0 border-width-1">
+
+            <div id="copyrights" class="bg-color">
+                <div class="container">
+                    <p class="mb-0 text-center text-dark text-opacity-75">Copyrights &copy; 2023 All Rights Reserved by
+                        Canvas Inc.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="gotoTop" class="uil uil-angle-up"></div>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.bundle.js"></script>
+</body>
+
+</html>
