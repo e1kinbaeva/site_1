@@ -102,7 +102,9 @@ class Works(models.Model):
         verbose_name="Название работы"
     )
     published = models.DateField(
+        auto_now_add=True,
         verbose_name="Опубликовано"
+
     )
     description = models.TextField(
         verbose_name="Описание работы"
@@ -166,6 +168,7 @@ class Blogs(models.Model):
         verbose_name="Имя"
     )
     created = models.DateField(
+        auto_now_add=True,
         verbose_name="Дата создания"
     )
     description = models.TextField(

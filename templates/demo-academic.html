@@ -391,8 +391,8 @@
                             <div class="col-md-6">
                                 <div class="form-widget">
                                     <div class="form-result"></div>
-                                    <form class="mb-0" id="template-contactform" method="POST" name="template-contactform"
-                                        action="include/form.php" method="post">
+                                    <form class="mb-0" id="template-contactform" method="POST" name="template-contactform" >
+                                            {% csrf_token %}
                                         <div class="form-process">
                                             <div class="css3-spinner">
                                                 <div class="css3-spinner-scaler"></div>
@@ -458,8 +458,8 @@
 
     <div id="gotoTop" class="uil uil-angle-up"></div>
 
-    <script src="js/plugins.min.js"></script>
-    <script src="js/functions.bundle.js"></script>
+    <script src="static/js/plugins.min.js"></script>
+    <script src="static/js/functions.bundle.js"></script>
 </body>
 
 </html>
